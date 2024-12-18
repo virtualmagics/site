@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="C:\Users\USER\Downloads\vmagic.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: azure;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 700px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: purple;
+  width: 150px;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+    </style>
+</head>
+<body>
+  
+    <div class="topnav" id="myTopnav">
+        <a href="C:\Users\USER\Desktop\sites.html" style="width: 200px;">HOME</a>
+        <a href="C:\Users\USER\Desktop\about.html" class="active" style="width: 500px;">ABOUT</a>
+      </div>
+      <button class="tablink" onclick="openCity('vmagic', this, 'purple')" id="defaultOpen" style="background-color: purple; width: 700PX; color: white;">
+        <h1><i>ABOUT VIRTUAL MAGICS</i></h1>
+        </button>
+    <h1 style="border: 50ex;">ABOUT US</h1>
+    <p>Welcome to Virtual Magics, a leading provider of virtual reality (VR) and augmented reality (AR) solutions. <br>
+        We're a team of innovators, creatives, and technologists passionate about pushing the boundaries of what's <br>
+        possible in the virtual world. As a Virtual Assistant with Virtual Magics, you'll have the opportunity to <br>
+        work with a dynamic and fast-pacedteam, providing administrative support to our clients and helping to drive <br>
+        the success of our business.</p>
+        
+        <h2>Our Mission</h2>
+        
+        <p>Our mission is to create immersive and interactive experiences that inspire, educate, and entertain. We're <br>
+            looking for talented Virtual Assistants who share our passion for innovation and customer service, and who <br>
+            are eager to join us on this exciting journey.</p>
+        
+       <h2> Why Join Virtual Magics as a Virtual Assistant?</h2>
+        
+       <p> - Flexibility: As a Virtual Assistant with Virtual Magics, you'll have the flexibility to work from anywhere, <br>
+        at any time. We offer a range of scheduling options to fit your lifestyle and preferences. <br>
+        - Variety: You'll have the opportunity to work with a diverse range of clients and projects, from administrative <br>
+        tasks to social media management and customer service. <br>
+        - Opportunities for Growth: We're committed to helping our Virtual Assistants grow and develop their skills. Whether <br>
+        you're looking to advance your career or expand your skillset, we have opportunities for you. <br>
+        - Competitive Compensation: We offer competitive hourly rates and benefits, including paid time off and opportunities <br>
+        for professional development. </p>
+        
+        <h2>What We're Looking For</h2>
+        
+        <strong><i>We're looking for Virtual Assistants who are:</i></strong><br><br>
+        
+        - Highly organized and detail-oriented <br>
+        - Excellent communicators with strong customer service skills <br>
+        - Able to work independently and as part of a team <br>
+        - Proficient in a range of software applications, including Google Suite and Microsoft Office <br>
+        - Able to maintain confidentiality and handle sensitive information with discretion <br><br>
+        
+        <h2>Our Virtual Assistant Roles</h2>
+        
+       <strong><i> We offer a range of Virtual Assistant roles, including: </i></strong><br>
+        
+       <p> - Administrative Support: Provide administrative support to our clients, including email management, calendar organization, <br>
+        and data entry. <br>
+        - Customer Service: Provide exceptional customer service to our clients, including responding to inquiries and resolving <br>
+        issues. <br>
+        - Social Media Management: Manage our clients' social media presence, including creating and scheduling posts, responding <br>
+        to comments, and analyzing engagement metrics. <br>
+        - Special Projects: Assist with special projects, including research, data analysis, and project coordination. </p>
+        
+        <h2>How to Apply</h2>
+        
+       <p> To apply for a Virtual Assistant role with Virtual Magics, please <strong><i>Apply</i></strong> through our website. We <br>
+        can't wait to hear from you!</p><br>
+        
+        <h2>Equal Employment Opportunity</h2>
+        
+        Virtual Magics is an equal employment opportunity employer. We welcome applications from diverse candidates and are committed <br>
+        to creating an inclusive workplace culture.</p>
+
+
+
+    <style>
+   body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 4;
+}
+    </style>    
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="https://formsubmit.co/ee4bb3cfa58b039f0a99534c138561e7" method="post" class="form-container">
+    <h2>Chat</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" required><br>
+    <label for="Phone">Phone Number:</label><br>
+    <input type="number" name="phone no" id="phone" required><br>
+   <label for="msg"><b>Message</b></label><br>
+    <textarea placeholder="Type message.." name="msg" required></textarea><br>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body><br><br>
+<footer style="align-items: center;">&copy;2024 vmagic.com</footer>
+</html>
